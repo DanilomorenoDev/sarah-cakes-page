@@ -1,0 +1,180 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('sarahok.jpeg');
+    background-attachment: fixed; /* Efeito parallax */
+    background-size: cover;
+    background-blur: 8px; /* Desfocar a imagem */
+}
+
+/* Cabeçalho fixo */
+#topo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(279, 51%, 55%);
+    color: floralwhite;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(190, 123, 238, 0.5); /* Sombra azul bebê */
+}
+
+#topo nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 15;
+    
+}
+
+#topo nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#topo nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#topo nav ul li a:hover {
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+main {
+    margin-top: 60px; /* Espaço para o cabeçalho fixo */
+    color:#c44b9a ; /* Cor do texto sobre a imagem de fundo */
+    text-decoration: none; 
+    background-color: hwb(209 30% 9%); /* Cor de fundo personalizada */ 
+    border-radius: 25px;  /* Arredondamento das bordas */
+}
+
+#topo nav ul li a:hover { 
+    background-color: hwb(209 30% 9%); /* Cor de fundo ao passar o mouse */ 
+}
+
+#topo nav ul li a:active { 
+    transform: scale(0.95); /* Efeito de clique interativo */ 
+    background-color: hwb(209 30% 9%); /* Cor de fundo ao clicar */ }
+
+
+section {
+    padding: 50px;
+     ;
+    background-attachment: fixed; /* Efeito parallax */
+    background-size: cover;
+}
+h1{ width: 200px;
+    padding: 5px;
+    border: 8px solid #46e6f5;
+    border-radius: 15px;
+    color: #c44b9a;
+}
+
+ul{    
+    font-family: tahoma;
+ 
+
+}
+/* Imagens com bordas arredondadas e sombreamento */
+.imagens img { 
+    border-radius: 125px;
+    box-shadow: 0 6px 12px rgba(255, 182, 193, 0.5), 0 4px 8px rgba(216, 191, 216, 0.5); /* Sombra rosa bebê e roxo clarinho */
+    width: 300px; /* Largura ajustada */ 
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Suaviza as transições */ }
+    
+/* Efeito de zoom e desvanecimento ao passar o mouse */ 
+img:hover { 
+    transform: scale(1.1); /* Efeito de zoom */ 
+    opacity: 0.8; /* Reduz a opacidade */ 
+} 
+/* Animação contínua (opcional) */ @keyframes pulse {
+     0% { 
+        transform: scale(1); } 
+        50% { 
+            transform: scale(1.05); } 
+            100% { transform: scale(1); } 
+        } 
+img.pulse { animation: pulse 2s infinite; /* Aplica a animação de pulsação */ 
+}
+
+#menu {
+    background-image: url('foto-fundo.jpeg');
+}
+
+#sobre {
+    background-image: url('fundo-coracao.png');
+}
+
+#contato {
+    background-image: url('fundo-sarah.jpeg');
+}
+
+/* Rodapé flutuante */
+#rodape {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    background-color: hwb(201 1% 9%);
+    color: rgb(186, 63, 63);
+    padding: 10px;
+    border-radius: 25px; /* Arredondamento das bordas */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(173, 216, 230, 0.5); /* Sombra azul bebê */
+}
+
+ img{
+      margin: 10px;
+      width: 300px; /* Largura ajustada */ 
+      height: auto;
+      border-radius: 125px;
+}
+
+p{  
+        font-family: tahoma;
+        bottom: 08px
+        right: 10px;
+        background-color: rgb(231, 26, 238);
+        color: hwb(0 100% 0%);
+        padding: 10px;
+        border-radius: 25px; /* Arredondamento das bordas */
+        box-shadow: 0 4px 8px 0 rgba(173, 216, 230, 0.5); /* Sombra azul bebê */
+
+}
+
+
+#rodape a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Adiciona preenchimento ao redor do texto */ 
+    transition: background-color 0.3s, 
+    transform 0.3s; /* Suaviza as mudanças de estado */ 
+    font-size: 14px;
+    border-radius: 25px; /* Arredondamento das bordas */
+    font-weight: bold;
+    text-decoration: none;
+        
+}
+
+#contato{ 
+    color: #12adf5;
+    background-color: #c44b9a;
+    text-decoration: none;
+    padding: 5px 10px; /* Adiciona preenchimento ao redor do texto */ 
+    transition: background-color 0.3s, 
+    transform 0.3s; /* Suaviza as mudanças de estado */ 
+    font-size: 14px;
+    border-radius: 25px; ; /* Arredondamento das bordas */
+    font-weight: bold;
+}
+    
+
+#rodape a:hover {
+    text-decoration: none;
+
+    
+}
